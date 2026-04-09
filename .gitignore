@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build / packaging
+*.egg-info/
+dist/
+build/
+*.egg
+*.whl
+MANIFEST
+
+# Demucs model cache (downloaded on first run, ~1GB)
+~/.cache/torch/hub/
+pretrained_models/
+
+# Audio output — never commit stems or tagged copies
+stems/
+tagged/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# JetBrains
+.idea/
+
+# VS Code
+.vscode/
+
+# Claude Code local settings (contains machine-specific config)
+.claude/settings.local.json

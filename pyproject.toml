@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crate"
+version = "0.1.0"
+description = "DJ-ready audio analysis for Serato DJ Pro and Rekordbox"
+requires-python = ">=3.10"
+dependencies = [
+    "librosa>=0.10",
+    "demucs>=4.0",
+    "mutagen>=1.47",
+    "typer>=0.12",
+    "rich>=13",
+    "numpy>=1.24",
+    "soundfile>=0.12",
+    "customtkinter>=5.2",
+]
+
+[project.scripts]
+crate = "crate.cli:app"
+crate-gui = "crate.gui:launch"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["crate*"]
